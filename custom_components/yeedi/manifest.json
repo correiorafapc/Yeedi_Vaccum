@@ -1,6 +1,6 @@
 {
   "domain": "yeedi",
-  "name": "Yeedi Vaccum",
+  "name": "Yeedi Vacuum",
   "codeowners": ["@correiorafapc"],
   "config_flow": true,
   "documentation": "",
