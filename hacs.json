@@ -1,6 +1,7 @@
 {
   "name": "Yeedi Vacuum",
   "domains": ["yeedi"],
+  "content_in_root": false,
   "documentation": "https://github.com/correiorafapc/yeedi_vaccum",
   "codeowners": ["@correiorafapc"],
   "render_readme": true
