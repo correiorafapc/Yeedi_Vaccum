@@ -1,22 +1,50 @@
-# Yeedi Vacuum for Home Assistant
 
-Custom integration for Yeedi vacuum robots using the Ecovacs cloud. For now I just added my Yeedi vaccum and it is working fine. Need more test.
+# Yeedi Vacuum Integration
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![HACS](https://img.shields.io/badge/HACS-Custom-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+Custom Home Assistant integration for Yeedi robot vacuums using the Ecovacs cloud API.
+
+## Features
+
+- Start / stop cleaning
+- Return to dock
+- Vacuum state monitoring
+- Basic device control
 
 ## Supported Devices
+
 - Yeedi Vac Station (mnx7f4)
 
 ## Installation
 
-### Via HACS
-1. Add this repo as a custom repository in HACS
-2. Search for "Yeedi Vaccum" and install
+### HACS
+1. Add this repository as a custom repository in HACS
+2. Install the integration
 3. Restart Home Assistant
-4. Go to Settings → Integrations → Add → Yeedi Vacuum
 
 ### Manual
-Copy `custom_components/yeedi_vaccum/` to your HA `config/custom_components/` folder.
+Copy the `custom_components/yeedi` folder into your Home Assistant config directory.
+
+## Configuration
+
+1. Go to Settings → Devices & Services
+2. Click "Add Integration"
+3. Search for "Yeedi Vacuum"
+4. Enter your Ecovacs account credentials
 
 ## Requirements
+
 - Home Assistant 2026.5+
 - deebot-client 18.3.0
-- Yeedi account (migrate device to Ecovacs account first). This is the key for the application works. You need to unbind the robot from yeedi account and add at Ecovacs. After you will register the robot will not appear at the application, but you can control by HA using this integration.
+- Yeedi device linked to Ecovacs account
+
+## Important Notes
+
+- You must migrate your Yeedi device to an Ecovacs account before using this integration.
+- After migration, the device will not appear in the Yeedi app but will be controllable via Home Assistant.
+
+## Disclaimer
+
+This integration is based on Ecovacs cloud APIs and is not officially supported by Yeedi.
