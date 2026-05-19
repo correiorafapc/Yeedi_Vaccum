@@ -5,7 +5,9 @@
   "documentation": "https://github.com/correiorafapc/Yeedi_Vaccum",
   "issue_tracker": "https://github.com/correiorafapc/Yeedi_Vaccum/issues",
   "codeowners": ["@correiorafapc"],
-  "requirements": ["deebot-client==18.3.0"],
+  "requirements": [
+    "deebot-client==18.3.0"
+  ],
   "dependencies": [],
   "iot_class": "cloud_polling",
   "config_flow": true,
